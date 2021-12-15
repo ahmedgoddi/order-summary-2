@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+p {
+    font-size:  16px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1440px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #fff;
+    border-radius: 1rem;
+}
+.card-img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2rem;
+    letter-spacing: 0.1rem;
+}
+.card p {
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(160, 154, 154);
+}
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.info {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+.price {
+    margin-left: 1rem;
+}
+.price p {
+    margin-top: 0;
+}
+.info-container a {
+    color: hsl(245, 75%, 52%);
+    margin-right: 2rem;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.btn-1,
+.btn-2 {
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 0.6rem 5.5rem;
+    border-radius: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+.btn-1 {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow:0 5px 20px rgb(164, 153, 212);
+}
+.btn-2 {
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        height: 100vh;
+    }
+    .card h2 {
+        margin-top: 2rem;
+    }
+    .info {
+        margin: 2rem 0;
+    }
+    .card {
+        width: 90%;
+    }
+    .btn-1,.btn2 {
+        padding: 1rem 0;
+    }
+}
+
